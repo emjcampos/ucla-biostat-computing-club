@@ -1,0 +1,55 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "UCLA Biostatistics Computing Club"
+theme = "hugo-lithium"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableEmoji = true
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    pre = ""
+    url = "/about/"
+    weight = 1
+[[menu.main]]
+    name = "GitHub"
+    pre = "fa-github"
+    url = "https://github.com/UCLA-BSA"
+    weight = 2
+[[menu.main]]
+    name = "Biostat Dept"
+    pre = "fa-at"
+    url = "https://www.biostat.ucla.edu"
+    weight = 3
+[[menu.main]]
+    name = "Posts"
+    pre = "fa-bullhorn"
+    url = "/post/"
+    weight = 4
+
+[params]
+    description = "The UCLA Biostatistics Computing Club is an organization to provide hands-on learning at a variety of skill levels."
+    customCSS = ["css/bcc.css", "css/font-awesome.min.css"]
+    
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
+
+    [params.logo]
+    url = "bsa-logo-hex.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+    
